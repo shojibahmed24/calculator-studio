@@ -80,6 +80,8 @@ jobs:
           echo "        force 'org.jetbrains.kotlin:kotlin-stdlib:1.9.10'" >> android/app/build.gradle
           echo "        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.10'" >> android/app/build.gradle
           echo "        force 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.10'" >> android/app/build.gradle
+          # Force specific version for Capacitor 7/Android 15 compatibility
+          force 'com.android.support:support-v4:28.0.0'
           echo "    }" >> android/app/build.gradle
           echo "}" >> android/app/build.gradle
 
